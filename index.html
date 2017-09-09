@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Kro Lanta 2</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" href="favicon.ico" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <link rel="icon" type="image/png" href="logo.png" />
+</head>
+
+<body class="is-loading">
+
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+
+        <!-- Intro -->
+        <div id="intro">
+            <h1>Kro Lanta<br /> Saison 2</h1>
+            <ul class="actions">
+                <li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
+            </ul>
+        </div>
+
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">Kro Lanta</a>
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+                <li class="active"><a href="index.html">Accueil</a></li>
+                <li><a href="generic.html">Localisation</a></li>
+                <li><a href="elements.html">Elements Reference</a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="https://github.com/" class="icon fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Featured Post -->
+            <article class="post featured">
+                <a class="image main"><img src="images/KroLanta.png" alt="" /></a>
+                <h1 id="compte_a_rebours"><noscript>Fin de l'évènement le 23 septembre 2017.</noscript></h1>
+                <script type="text/javascript">
+                    function compte_a_rebours() {
+                        var compte_a_rebours = document.getElementById("compte_a_rebours");
+                        var date_actuelle = new Date();
+                        var date_evenement = new Date("Sep 23 19:00:00 2017");
+                        var total_secondes = (date_evenement - date_actuelle) / 1000;
+                        var prefixe = "Kro Lanta : ";
+                        if (total_secondes < 0) {
+                            prefixe = "Kro Lanta : "; // On modifie le préfixe si la différence est négatif
+                            total_secondes = Math.abs(total_secondes); // On ne garde que la valeur absolue
+                        }
+                        if (total_secondes > 0) {
+                            var jours = Math.floor(total_secondes / (60 * 60 * 24));
+                            var heures = Math.floor((total_secondes - (jours * 60 * 60 * 24)) / (60 * 60));
+                            minutes = Math.floor((total_secondes - ((jours * 60 * 60 * 24 + heures * 60 * 60))) / 60);
+                            secondes = Math.floor(total_secondes - ((jours * 60 * 60 * 24 + heures * 60 * 60 + minutes * 60)));
+                            var et = "et";
+                            var mot_jour = "jours,";
+                            var mot_heure = "heures,";
+                            var mot_minute = "minutes,";
+                            var mot_seconde = "secondes";
+                            if (jours == 0) {
+                                jours = '';
+                                mot_jour = '';
+                            } else if (jours == 1) {
+                                mot_jour = "jour,";
+                            }
+                            if (heures == 0) {
+                                heures = '';
+                                mot_heure = '';
+                            } else if (heures == 1) {
+                                mot_heure = "heure,";
+                            }
+
+                            if (minutes == 0) {
+                                minutes = '';
+                                mot_minute = '';
+                            } else if (minutes == 1) {
+                                mot_minute = "minute,";
+                            }
+                            if (secondes == 0) {
+                                secondes = '';
+                                mot_seconde = '';
+                                et = '';
+                            } else if (secondes == 1) {
+                                mot_seconde = "seconde";
+                            }
+                            if (minutes == 0 && heures == 0 && jours == 0) {
+                                et = "";
+                            }
+                            compte_a_rebours.innerHTML = prefixe + jours + ' ' + mot_jour + ' ' + heures + ' ' + mot_heure + ' ' + minutes + ' ' + mot_minute + ' ' + et + ' ' + secondes + ' ' + mot_seconde;
+                        } else {
+                            compte_a_rebours.innerHTML = 'Compte à rebours terminé.';
+                        }
+                        var actualisation = setTimeout("compte_a_rebours();", 1000);
+                    }
+                    compte_a_rebours();
+
+                </script>
+                </h1>
+            </article>
+            </div>    
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
