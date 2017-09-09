@@ -34,7 +34,6 @@
             <ul class="links">
                 <li class="active"><a href="index.html">Accueil</a></li>
                 <li><a href="localisation.html">Localisation</a></li>
-                <li><a href="elements.html">Elements Reference</a></li>
             </ul>
             <ul class="icons">
                 <li><a href="https://github.com/" class="icon fa-github"><span class="label">GitHub</span></a></li>
@@ -101,7 +100,7 @@
                             if (minutes == 0 && heures == 0 && jours == 0) {
                                 et = "";
                             }
-                            compte_a_rebours_jour.innerHTML = prefixe + jours + ' ' + mot_jour;
+                            compte_a_rebours_jour.innerHTML = prefixe + '</br>' + jours + ' ' + mot_jour;
                             compte_a_rebours_heure.innerHTML = heures + ' ' + mot_heure;
                             compte_a_rebours_minute.innerHTML = minutes + ' ' + mot_minute;
                             compte_a_rebours_sec.innerHTML = secondes + ' ' + mot_seconde;
