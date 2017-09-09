@@ -19,10 +19,8 @@
         <!-- Intro -->
         <div id="intro">
             <h1>Kro Lanta<br /> Saison 2</h1>
-            <article class="post featured">
-                <h2 id="compte_a_rebours_jour"></h2>
-            </article>
-                <ul class="actions">
+            <h2 id="compte_a_rebours"></h2>
+            <ul class="actions">
                 <li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
             </ul>
         </div>
@@ -101,6 +99,7 @@
                             if (minutes == 0 && heures == 0 && jours == 0) {
                                 et = "";
                             }
+                            compte_a_rebours.innerHTML = jours + ' ' + mot_jour + ', ' + heures + ' ' + mot_heure;
                             compte_a_rebours_jour.innerHTML = prefixe + '</br>' + jours + ' ' + mot_jour;
                             compte_a_rebours_heure.innerHTML = heures + ' ' + mot_heure;
                             compte_a_rebours_minute.innerHTML = minutes + ' ' + mot_minute;
