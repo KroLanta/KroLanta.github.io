@@ -33,7 +33,7 @@
         <nav id="nav">
             <ul class="links">
                 <li class="active"><a href="index.html">Accueil</a></li>
-                <li><a href="generic.html">Localisation</a></li>
+                <li><a href="localisation.html">Localisation</a></li>
                 <li><a href="elements.html">Elements Reference</a></li>
             </ul>
             <ul class="icons">
@@ -47,7 +47,10 @@
             <!-- Featured Post -->
             <article class="post featured">
                 <a class="image main"><img src="images/KroLanta.png" alt="" /></a>
-                <h1 id="compte_a_rebours"><noscript>Fin de l'évènement le 23 septembre 2017.</noscript></h1>
+                <h1 id="compte_a_rebours_jour"></h1>
+        <h2 id="compte_a_rebours_heure"></h2>
+        <h3 id="compte_a_rebours_minute"></h3>
+        <h4 id="compte_a_rebours_sec"></h4>
                 <script type="text/javascript">
                     function compte_a_rebours() {
                         var compte_a_rebours = document.getElementById("compte_a_rebours");
@@ -65,9 +68,9 @@
                             minutes = Math.floor((total_secondes - ((jours * 60 * 60 * 24 + heures * 60 * 60))) / 60);
                             secondes = Math.floor(total_secondes - ((jours * 60 * 60 * 24 + heures * 60 * 60 + minutes * 60)));
                             var et = "et";
-                            var mot_jour = "jours,";
-                            var mot_heure = "heures,";
-                            var mot_minute = "minutes,";
+                            var mot_jour = "jours";
+                            var mot_heure = "heures";
+                            var mot_minute = "minutes";
                             var mot_seconde = "secondes";
                             if (jours == 0) {
                                 jours = '';
@@ -98,7 +101,10 @@
                             if (minutes == 0 && heures == 0 && jours == 0) {
                                 et = "";
                             }
-                            compte_a_rebours.innerHTML = prefixe + '</br>' + jours + ' ' + mot_jour + '</br>' + heures + ' ' + mot_heure + '</br>' + minutes + ' ' + mot_minute + '</br>' + secondes + ' ' + mot_seconde;
+                            compte_a_rebours_jour.innerHTML = prefixe + jours + ' ' + mot_jour;
+            compte_a_rebours_heure.innerHTML = heures + ' ' + mot_heure;
+            compte_a_rebours_minute.innerHTML = minutes + ' ' + mot_minute;
+            compte_a_rebours_sec.innerHTML = secondes + ' ' + mot_seconde;
                         } else {
                             compte_a_rebours.innerHTML = 'Compte à rebours terminé.';
                         }
