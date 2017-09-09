@@ -4378,16 +4378,22 @@ body.is-loading #intro:not(.hidden)+#header+#nav {
         box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
         visibility: visible;
     }
-    .biere:hover {
-        animation-name: trinque;
-        animation-duration: 0.5s;
+}
+
+.biere {
+    height: 100%;
+}
+
+.biere:hover {
+    animation-name: trinque;
+    animation-duration: 0.5s;
+}
+
+@keyframes trinque {
+    25% {
+        transform: rotate(-10deg);
     }
-    @keyframes trinque {
-        25% {
-            transform: rotate(-10deg);
-        }
-        50% {
-            transform: rotate(19deg);
-        }
+    50% {
+        transform: rotate(19deg);
     }
 }
