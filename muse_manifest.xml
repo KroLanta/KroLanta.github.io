@@ -1,0 +1,38 @@
+<manifest alg="2" build="2017.0.0.363" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster" exportTarget="other" domain="KroLanta.github.io" resolutions="1x" timestamp="1510418315269">
+  <folder name="assets">
+    <file name="trajet.png" crc="7913725" seo="true" mt="1504993001000"/>
+    <file name="trajet2.png" crc="428174484" seo="true" mt="1504993266000"/>
+  </folder>
+  <folder name="css">
+    <file name="site_global.css" crc="443350757"/>
+    <file name="index.css" crc="499950652" ref="index"/>
+    <file name="krolanta---localisation.css" crc="4075366571" ref="krolanta---localisation"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:krolanta---localisation"/>
+    <file name="museutils.js" crc="163421577" ref="index:krolanta---localisation"/>
+    <file name="whatinput.js" crc="86476730" ref="index:krolanta---localisation"/>
+    <file name="museconfig.js" crc="168988563" ref="index:krolanta---localisation"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="379354253" ref="index:krolanta---localisation"/>
+    <file name="jquery.watch.js" crc="104486786" ref="index:krolanta---localisation"/>
+    <file name="require.js" crc="244322403" ref="index:krolanta---localisation"/>
+  </folder>
+  <folder name="images">
+    <file name="krolanta---accueil-favicon.ico" crc="54158833" ref="index"/>
+    <file name="krolanta.jpg" crc="274056300" ref="index"/>
+    <file name="u150-4-a.png" crc="3875577116" ref="index"/>
+    <file name="u107-7-a.png" crc="4036992054" ref="index"/>
+    <file name="u153-4.png" crc="3916101837" ref="index"/>
+    <file name="bg.jpg" crc="312202836" ref="index:krolanta---localisation"/>
+    <file name="krolanta---localisation-favicon.ico" crc="54158833" ref="krolanta---localisation"/>
+    <file name="u178-4.png" crc="3875577116" ref="krolanta---localisation"/>
+    <file name="u383-4.png" crc="4093176008" ref="krolanta---localisation"/>
+    <file name="u175-7.png" crc="4036992054" ref="krolanta---localisation"/>
+    <file name="u179-4-a.png" crc="3916101837" ref="krolanta---localisation"/>
+    <file name="trajet.jpg" crc="526580079" ref="krolanta---localisation"/>
+    <file name="u846-4.png" crc="85335330" ref="krolanta---localisation"/>
+    <file name="trajet2.jpg" crc="3935545006" ref="krolanta---localisation"/>
+  </folder>
+  <file name="index.html" crc="229261445" seo="true" mt="1510417604853" redirect="true"/>
+  <file name="krolanta---localisation.html" crc="4139118443" seo="true" mt="1510418311509" redirect="true"/>
+</manifest>

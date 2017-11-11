@@ -1,140 +1,226 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html class="nojs html css_verticalspacer" lang="fr-FR">
 
 <head>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({
-            google_ad_client: "ca-pub-8066365068584932",
-            enable_page_level_ads: true
-        });
+
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="generator" content="2017.0.0.363" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script type="text/javascript">
+        // Update the 'nojs'/'js' class on the html node
+        document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
+
+        // Check that all required assets are uploaded and up-to-date
+        if (typeof Muse == "undefined") window.Muse = {};
+        window.Muse.assets = {
+            "required": ["museutils.js", "museconfig.js", "jquery.musepolyfill.bgsize.js", "jquery.watch.js", "require.js", "index.css"],
+            "outOfDate": []
+        };
 
     </script>
-    <title>Kro Lanta 3</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="icon" href="favicon.ico" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    <link rel="icon" type="image/png" href="logo.png" />
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <link rel="shortcut icon" href="images/krolanta---accueil-favicon.ico?crc=54158833" />
+    <title>KroLanta - Accueil</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=443350757" />
+    <link rel="stylesheet" type="text/css" href="css/index.css?crc=499950652" id="pagesheet" />
 </head>
 
-<body class="is-loading">
-    <audio autoplay>
-        <source src="krogen.mp3" type="audio/mpeg">
-    </audio>
+<body class="museBGSize">
 
-
-    <!-- Wrapper -->
-    <div id="wrapper" class="fade-in">
-
-        <!-- Intro -->
-        <div id="intro">
-            <h1>Kro Lanta<br /> Saison 3</h1>
-            <h2 id="compte_a_rebours"></h2>
-            <ul class="actions">
-                <li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
-            </ul>
+    <div class="clearfix borderbox" id="page">
+        <!-- group -->
+        <div class="rgba-background grpelem" id="u350">
+            <!-- simple frame -->
         </div>
+        <div class="clearfix grpelem" id="ppu605-3">
+            <!-- column -->
+            <div class="clearfix colelem" id="pu605-3">
+                <!-- group -->
+                <a class="nonblock nontext MuseLinkActive gradient rounded-corners clearfix grpelem" id="u605-3" href="index.html">
+                    <!-- content -->
+                    <p>&nbsp;</p>
+                </a>
+                <a class="nonblock nontext MuseLinkActive grpelem" id="u107-7" href="index.html">
+                    <!-- rasterized frame --><img id="u107-7_img" alt="Kro Lanta
+Saison 3" src="images/u107-7-a.png?crc=4036992054" data-image-width="261" /></a>
+            </div>
+            <div class="gradient rounded-corners clearfix colelem" id="u451">
+                <!-- group -->
+                <a class="nonblock nontext MuseLinkActive grpelem" id="u150-4" href="index.html">
+                    <!-- rasterized frame --><img id="u150-4_img" alt="Accueil" src="images/u150-4-a.png?crc=3875577116" data-image-width="261" /></a>
+                <a class="nonblock nontext grpelem" id="u153-4" href="krolanta---localisation.html">
+                    <!-- rasterized frame --><img id="u153-4_img" alt="Localisation" src="images/u153-4.png?crc=3916101837" data-image-width="261" /></a>
+            </div>
+            <div class="shadow museBGSize rounded-corners colelem" id="u321">
+                <!-- content -->
+                <div class="fluid_height_spacer"></div>
+            </div>
+            <div class="gradient rounded-corners colelem" id="u559">
+                <!-- simple frame -->
+                <article>
+                    <h1 id="compte_a_rebours_jour"></h1>
+                    <h2 id="compte_a_rebours_heure"></h2>
+                    <h2 id="compte_a_rebours_minute"></h2>
+                    <h2 id="compte_a_rebours_sec"></h2>
+                    <script type="text/javascript">
+                        function compte_a_rebours() {
+                            var compte_a_rebours = document.getElementById("compte_a_rebours");
+                            var date_actuelle = new Date();
+                            var date_evenement = new Date("Apr 10 19:00:00 2018");
+                            var total_secondes = (date_evenement - date_actuelle) / 1000;
+                            var prefixe = "Kro Lanta : ";
+                            if (total_secondes < 0) {
+                                prefixe = "Kro Lanta : "; // On modifie le préfixe si la différence est négatif
+                                total_secondes = Math.abs(total_secondes); // On ne garde que la valeur absolue
+                            }
+                            if (total_secondes > 0) {
+                                var jours = Math.floor(total_secondes / (60 * 60 * 24));
+                                var heures = Math.floor((total_secondes - (jours * 60 * 60 * 24)) / (60 * 60));
+                                minutes = Math.floor((total_secondes - ((jours * 60 * 60 * 24 + heures * 60 * 60))) / 60);
+                                secondes = Math.floor(total_secondes - ((jours * 60 * 60 * 24 + heures * 60 * 60 + minutes * 60)));
+                                var et = "et";
+                                var mot_jour = "jours";
+                                var mot_heure = "heures";
+                                var mot_minute = "minutes";
+                                var mot_seconde = "secondes";
+                                if (jours == 0) {
+                                    jours = '';
+                                    mot_jour = '';
+                                } else if (jours == 1) {
+                                    mot_jour = "jour";
+                                }
+                                if (heures == 0) {
+                                    heures = '';
+                                    mot_heure = '';
+                                } else if (heures == 1) {
+                                    mot_heure = "heure";
+                                }
 
-        <!-- Header -->
-        <header id="header">
-            <a href="index.html" class="logo">Kro Lanta</a>
-        </header>
-
-        <!-- Nav -->
-        <nav id="nav">
-            <ul class="links">
-                <li class="active"><a href="index.html">Accueil</a></li>
-                <li><a href="localisation.html">Localisation</a></li>
-            </ul>
-            <img class="biere" src="images/13061.png">
-        </nav>
-
-        <!-- Main -->
-        <div id="main">
-
-            <!-- Featured Post -->
-            <article class="post featured">
-                <a class="image main"><img src="images/KroLanta.jpg" alt="" /></a>
-                <h1 id="compte_a_rebours_jour"></h1>
-                <h2 id="compte_a_rebours_heure"></h2>
-                <h2 id="compte_a_rebours_minute"></h2>
-                <h2 id="compte_a_rebours_sec"></h2>
-                <script type="text/javascript">
-                    function compte_a_rebours() {
-                        var compte_a_rebours = document.getElementById("compte_a_rebours");
-                        var date_actuelle = new Date();
-                        var date_evenement = new Date("Apr 10 19:00:00 2018");
-                        var total_secondes = (date_evenement - date_actuelle) / 1000;
-                        var prefixe = "Kro Lanta : ";
-                        if (total_secondes < 0) {
-                            prefixe = "Kro Lanta : "; // On modifie le préfixe si la différence est négatif
-                            total_secondes = Math.abs(total_secondes); // On ne garde que la valeur absolue
+                                if (minutes == 0) {
+                                    minutes = '';
+                                    mot_minute = '';
+                                } else if (minutes == 1) {
+                                    mot_minute = "minute";
+                                }
+                                if (secondes == 0) {
+                                    secondes = '';
+                                    mot_seconde = '';
+                                    et = '';
+                                } else if (secondes == 1) {
+                                    mot_seconde = "seconde";
+                                }
+                                if (minutes == 0 && heures == 0 && jours == 0) {
+                                    et = "";
+                                }
+                                compte_a_rebours.innerHTML = jours + ' ' + mot_jour + ', ' + heures + ' ' + mot_heure;
+                                compte_a_rebours_jour.innerHTML = jours + ' ' + mot_jour;
+                                compte_a_rebours_heure.innerHTML = heures + ' ' + mot_heure;
+                                compte_a_rebours_minute.innerHTML = minutes + ' ' + mot_minute;
+                                compte_a_rebours_sec.innerHTML = secondes + ' ' + mot_seconde;
+                            } else {
+                                compte_a_rebours.innerHTML = 'Compte à rebours terminé.';
+                            }
+                            var actualisation = setTimeout("compte_a_rebours();", 1000);
                         }
-                        if (total_secondes > 0) {
-                            var jours = Math.floor(total_secondes / (60 * 60 * 24));
-                            var heures = Math.floor((total_secondes - (jours * 60 * 60 * 24)) / (60 * 60));
-                            minutes = Math.floor((total_secondes - ((jours * 60 * 60 * 24 + heures * 60 * 60))) / 60);
-                            secondes = Math.floor(total_secondes - ((jours * 60 * 60 * 24 + heures * 60 * 60 + minutes * 60)));
-                            var et = "et";
-                            var mot_jour = "jours";
-                            var mot_heure = "heures";
-                            var mot_minute = "minutes";
-                            var mot_seconde = "secondes";
-                            if (jours == 0) {
-                                jours = '';
-                                mot_jour = '';
-                            } else if (jours == 1) {
-                                mot_jour = "jour";
-                            }
-                            if (heures == 0) {
-                                heures = '';
-                                mot_heure = '';
-                            } else if (heures == 1) {
-                                mot_heure = "heure";
-                            }
+                        compte_a_rebours();
 
-                            if (minutes == 0) {
-                                minutes = '';
-                                mot_minute = '';
-                            } else if (minutes == 1) {
-                                mot_minute = "minute";
-                            }
-                            if (secondes == 0) {
-                                secondes = '';
-                                mot_seconde = '';
-                                et = '';
-                            } else if (secondes == 1) {
-                                mot_seconde = "seconde";
-                            }
-                            if (minutes == 0 && heures == 0 && jours == 0) {
-                                et = "";
-                            }
-                            compte_a_rebours.innerHTML = jours + ' ' + mot_jour + ', ' + heures + ' ' + mot_heure;
-                            compte_a_rebours_jour.innerHTML = jours + ' ' + mot_jour;
-                            compte_a_rebours_heure.innerHTML = heures + ' ' + mot_heure;
-                            compte_a_rebours_minute.innerHTML = minutes + ' ' + mot_minute;
-                            compte_a_rebours_sec.innerHTML = secondes + ' ' + mot_seconde;
-                        } else {
-                            compte_a_rebours.innerHTML = 'Compte à rebours terminé.';
-                        }
-                        var actualisation = setTimeout("compte_a_rebours();", 1000);
-                    }
-                    compte_a_rebours();
-
-                </script>
-            </article>
+                    </script>
+                </article>
+            </div>
+            <div class="gradient colelem" id="u602">
+                <!-- simple frame -->
+            </div>
         </div>
+        <div class="verticalspacer" data-offset-top="1141" data-content-above-spacer="1141" data-content-below-spacer="62"></div>
     </div>
+    <!-- Other scripts -->
+    <script type="text/javascript">
+        window.Muse.assets.check = function(d) {
+            if (!window.Muse.assets.checked) {
+                window.Muse.assets.checked = !0;
+                var b = {},
+                    c = function(a, b) {
+                        if (window.getComputedStyle) {
+                            var c = window.getComputedStyle(a, null);
+                            return c && c.getPropertyValue(b) || c && c[b] || ""
+                        }
+                        if (document.documentElement.currentStyle) return (c = a.currentStyle) && c[b] || a.style && a.style[b] || "";
+                        return ""
+                    },
+                    a = function(a) {
+                        if (a.match(/^rgb/)) return a = a.replace(/\s+/g, "").match(/([\d\,]+)/gi)[0].split(","), (parseInt(a[0]) << 16) + (parseInt(a[1]) << 8) + parseInt(a[2]);
+                        if (a.match(/^\#/)) return parseInt(a.substr(1),
+                            16);
+                        return 0
+                    },
+                    g = function(g) {
+                        for (var f = document.getElementsByTagName("link"), h = 0; h < f.length; h++)
+                            if ("text/css" == f[h].type) {
+                                var i = (f[h].href || "").match(/\/?css\/([\w\-]+\.css)\?crc=(\d+)/);
+                                if (!i || !i[1] || !i[2]) break;
+                                b[i[1]] = i[2]
+                            }
+                        f = document.createElement("div");
+                        f.className = "version";
+                        f.style.cssText = "display:none; width:1px; height:1px;";
+                        document.getElementsByTagName("body")[0].appendChild(f);
+                        for (h = 0; h < Muse.assets.required.length;) {
+                            var i = Muse.assets.required[h],
+                                l = i.match(/([\w\-\.]+)\.(\w+)$/),
+                                k = l && l[1] ?
+                                l[1] : null,
+                                l = l && l[2] ? l[2] : null;
+                            switch (l.toLowerCase()) {
+                                case "css":
+                                    k = k.replace(/\W/gi, "_").replace(/^([^a-z])/gi, "_$1");
+                                    f.className += " " + k;
+                                    k = a(c(f, "color"));
+                                    l = a(c(f, "backgroundColor"));
+                                    k != 0 || l != 0 ? (Muse.assets.required.splice(h, 1), "undefined" != typeof b[i] && (k != b[i] >>> 24 || l != (b[i] & 16777215)) && Muse.assets.outOfDate.push(i)) : h++;
+                                    f.className = "version";
+                                    break;
+                                case "js":
+                                    h++;
+                                    break;
+                                default:
+                                    throw Error("Unsupported file type: " + l);
+                            }
+                        }
+                        d ? d().jquery != "1.8.3" && Muse.assets.outOfDate.push("jquery-1.8.3.min.js") : Muse.assets.required.push("jquery-1.8.3.min.js");
+                        f.parentNode.removeChild(f);
+                        if (Muse.assets.outOfDate.length || Muse.assets.required.length) f = "Certains fichiers sur le serveur sont peut-être manquants ou incorrects. Videz le cache du navigateur et réessayez. Si le problème persiste, contactez le créateur du site.", g && Muse.assets.outOfDate.length && (f += "\nOut of date: " + Muse.assets.outOfDate.join(",")), g && Muse.assets.required.length && (f += "\nMissing: " + Muse.assets.required.join(",")), alert(f)
+                    };
+                location && location.search && location.search.match && location.search.match(/muse_debug/gi) ? setTimeout(function() {
+                    g(!0)
+                }, 5E3) : g()
+            }
+        };
+        var muse_init = function() {
+            require.config({
+                baseUrl: ""
+            });
+            require(["jquery", "museutils", "whatinput", "jquery.musepolyfill.bgsize", "jquery.watch"], function(d) {
+                var $ = d;
+                $(document).ready(function() {
+                    try {
+                        window.Muse.assets.check($); /* body */
+                        Muse.Utils.transformMarkupToFixBrowserProblemsPreInit(); /* body */
+                        Muse.Utils.prepHyperlinks(true); /* body */
+                        Muse.Utils.fullPage('#page'); /* 100% height page */
+                        Muse.Utils.showWidgetsWhenReady(); /* body */
+                        Muse.Utils.transformMarkupToFixBrowserProblems(); /* body */
+                    } catch (b) {
+                        if (b && "function" == typeof b.notify ? b.notify() : Muse.Assert.fail("Error calling selector function: " + b), false) throw b;
+                    }
+                })
+            })
+        };
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/skel.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-
+    </script>
+    <!-- RequireJS script -->
+    <script src="scripts/require.js?crc=244322403" type="text/javascript" async data-main="scripts/museconfig.js?crc=168988563" onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType && requireType.toString && requireType.toString().indexOf && 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }" onerror="window.Muse.assets.check();"></script>
 </body>
 
 </html>
